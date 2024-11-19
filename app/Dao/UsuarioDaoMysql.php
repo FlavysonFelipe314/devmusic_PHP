@@ -30,7 +30,7 @@ class UsuarioDaoMysql implements UsuarioDaoInterface{
     public function create(Usuario $user)
     {
         $sql = $this->pdo->prepare("INSERT INTO usuarios
-        (email, usuario, password, token, avatar, bio, created_at) VALUES (:email, :usuario, :password, :token, :avatar, :bio, :created_at)");    
+        (email, usuario, password, token, avatar, created_at) VALUES (:email, :usuario, :password, :token, :avatar, :created_at)");    
         $sql->bindValue(":email", $user->getEmail());
         $sql->bindValue(":usuario", $user->getUsuario());
         $sql->bindValue(":password", $user->getPassword());
