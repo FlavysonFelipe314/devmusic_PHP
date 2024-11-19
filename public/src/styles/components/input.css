@@ -1,0 +1,25 @@
+input,
+select {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  padding: 12px 10px;
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  color: var(--primary-white);
+  background-color: var(--background-item-menu);
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  background-color: var(--hover-item-menu);
+}
+
+option {
+  background-color: var(--background-menu);
+  color: var(--primary-lightBlue);
+  cursor: pointer;
+}

@@ -1,0 +1,73 @@
+header {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+header .material-symbols-outlined {
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--primary-white);
+}
+
+header .perfil-user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+/* Principais Produtores */
+
+section.produtores .banner-content {
+  display: flex;
+  margin: 20px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+section.produtores .banner-content::-webkit-scrollbar {
+  display: none;
+}
+
+section.produtores .banner-produtor {
+  margin: 0 20px 0 0;
+}
+
+section.produtores .banner-produtor img {
+  width: 200px;
+  height: 200px;
+}
+
+section.produtores .banner-produtor p {
+  color: var(--primary-lightGray);
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* Adicionados Recentemente */
+
+section.musics .music-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  section.musics .music-content {
+    flex-direction: column;
+  }
+
+  section.musics .content-music-side {
+    width: 100%;
+  }
+
+  header .logo img {
+    width: 200px;
+  }
+}

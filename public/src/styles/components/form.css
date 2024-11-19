@@ -1,0 +1,9 @@
+form .w100-wraper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+form .submit-wraper {
+  margin: 30px 0;
+  width: 150px;
+}

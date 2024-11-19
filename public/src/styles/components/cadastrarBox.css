@@ -1,0 +1,45 @@
+#cadastrar-trigger {
+  position: relative;
+}
+
+.cadastrar-box {
+  position: absolute;
+  top: -50px;
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  left: -115px;
+  transition: 0.3s;
+}
+
+.cadastrar-box > a {
+  width: 100% !important;
+  display: flex;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--opacity-lightBlue);
+  padding: 10px;
+  align-items: center;
+  color: var(--primary-white);
+}
+
+#cadastrar-trigger-mobile .cadastrar-box {
+  left: 0 !important;
+}
+
+#cadastrar-trigger a > span {
+  color: var(--primary-lightBlue);
+  font-size: 20px;
+}
+
+.apareceBox {
+  top: -130px !important;
+  height: 150px !important;
+  transition: 0.3s !important;
+}
+
+.apareceBoxMobile {
+  top: -120px !important;
+  height: 150px !important;
+  transition: 0.3s !important;
+}
