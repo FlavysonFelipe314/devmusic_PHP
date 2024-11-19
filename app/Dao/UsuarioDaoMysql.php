@@ -36,7 +36,6 @@ class UsuarioDaoMysql implements UsuarioDaoInterface{
         $sql->bindValue(":password", $user->getPassword());
         $sql->bindValue(":token", $user->getToken());
         $sql->bindValue(":avatar", $user->getAvatar());
-        $sql->bindValue(":bio", $user->getBio());
         $sql->bindValue(":created_at", $user->getCreatedAt());
 
         $sql->execute();        
