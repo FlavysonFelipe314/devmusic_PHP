@@ -43,6 +43,15 @@ if($email && $usuario && $password && $confirmPassword){
     }
 
     $Auth->registerUser($email,$usuario, $password);
+    $to = $email;
+    $subject = "bem vindo ao DEVMUSIC";
+    $message = "Bem vindo a nossa plataforma DEVMUSIC";
+
+    if(mail($to, $subject, $message, $headers)) {
+        echo "Email enviado com sucesso!";
+    } else {
+        echo "Falha ao enviar o email.";
+    }
 
 
     $_SESSION["flash"] = "Usuário cadastrado com Sucesso";
